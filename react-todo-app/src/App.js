@@ -13,7 +13,7 @@ function Todo({ todo, index, completeTodo, deleteTodo }) {
   )
 }
 
-function TodoForm({ addTodo }) {
+function TodoForm({addTodo}) {
   const [value, setValue] = useState('');
 
   const handleSubmit = e => {
@@ -30,7 +30,9 @@ function TodoForm({ addTodo }) {
       <input type="text"
         className="input"
         placeholder="Add new task"
+        //this is the value of the state
         value={value}
+        //what we named the method to update the state
         onChange={e => setValue(e.target.value)}
       />
     </form>
