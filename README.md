@@ -6,6 +6,9 @@ This todo application was made using React and the useState hook.
 ```bash
 Right click the src folder and select "open in terminal"
 Run 'npm start' 
+
+![Screenshot 1](./screenshots/react-note1.png)
+![Screenshot 2](./screenshots/react-note2.png)
 ```
 
 ## Usage
