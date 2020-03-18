@@ -40,7 +40,7 @@ function TodoForm({ addTodo }) {
         onChange={e => setValue(e.target.value)}
       />
     </form>
-  )
+  );
 }
 
 function App() {
@@ -64,7 +64,7 @@ function App() {
     const newTodos = [...todos, { text }];
     //setTodos updates the current state
     setTodos(newTodos);
-  }
+  };
 
   const completeTodo = index => {
     //array with existing todos
@@ -72,7 +72,7 @@ function App() {
     newTodos[index].isCompleted = true;
     //sets state
     setTodos(newTodos);
-  }
+  };
 
   const deleteTodo = index => {
     const newTodos = [...todos];
@@ -80,7 +80,7 @@ function App() {
     newTodos.splice(index, 1);
     //sets state as array without the deleted element
     setTodos(newTodos);
-  }
+  };
 
   return (
     <div className="app">
@@ -97,6 +97,7 @@ function App() {
         <TodoForm addTodo={addTodo} />
       </div>
     </div>
-  )
+  );
 }
+
 export default App;
