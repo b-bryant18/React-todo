@@ -13,7 +13,7 @@ Run "npm start" to open the app in your browser.
 
 ```python
 ![Screenshot 1](./screenshots/react-note1.png)
-![Screenshot 1](./screenshots/react-note2.png)
+![Screenshot 2](./screenshots/react-note2.png)
 
 ```
 
