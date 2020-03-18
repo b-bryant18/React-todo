@@ -23,7 +23,7 @@ function TodoForm({addTodo}) {
     addTodo(value);
     //clears the form out after submitting a new todo
     setValue('');
-  }
+  };
 
   return (
     <form onSubmit={handleSubmit}>
@@ -74,6 +74,7 @@ function App() {
     const newTodos = [...todos];
     //splice modifies arrays by removing elements and/or adding new ones
     newTodos.splice(index, 1);
+    //sets state as array without the deleted element
     setTodos(newTodos);
   }
 
