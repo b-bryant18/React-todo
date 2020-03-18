@@ -7,18 +7,22 @@ function Todo({ todo, index, completeTodo, deleteTodo }) {
     <div style={{ textDecoration: todo.isCompleted ? 'line-through' : '' }} className="todo">
       {todo.text}
       {/* function for striking through completed todos, index tells the app which todo has been clicked*/}
-      <button onClick={() => completeTodo(index)}>Complete</button>
-      <button onClick={() => deleteTodo(index)}>X</button>
+      <div>
+        <button onClick={() => completeTodo(index)}>Complete</button>
+        <button onClick={() => deleteTodo(index)}>X</button>
+      </div>
     </div>
   )
 }
 
-function TodoForm({addTodo}) {
+function TodoForm({ addTodo }) {
+  //addTodo needs {} when it's passed in bc it's being destructured from props
   const [value, setValue] = useState('');
 
+  //e means event parameter
   const handleSubmit = e => {
     e.prevent.default();
-    //If value is empty don't submit
+    //If value is empty (no value) don't submit
     if (!value) return;
     addTodo(value);
     //clears the form out after submitting a new todo
