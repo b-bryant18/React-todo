@@ -10,12 +10,9 @@ Run "npm start" to open the app in your browser.
 ```
 
 ## Screenshots
-
-```python
-![Screenshot 1](./screenshots/react-note1.png)
+![pic](./screenshots/react-note1.png)
 ![Screenshot 2](./screenshots/react-note2.png)
 
-```
 
 ## Contributing
 Thanks to Traversy Media for providing the tutorial for this app. Click the link below to visit his channel.
